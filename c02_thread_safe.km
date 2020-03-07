@@ -234,6 +234,134 @@
                                         "children": []
                                     }
                                 ]
+                            },
+                            {
+                                "data": {
+                                    "id": "c146lb1zyl40",
+                                    "created": 1583541440746,
+                                    "text": "Fix problem"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c146lhbu75k0",
+                            "created": 1583541454401,
+                            "text": "2.3.2 Reentrancy"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c146sx2dxog0",
+                                    "created": 1583542037208,
+                                    "text": "Prelude",
+                                    "expandState": "expand"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c146pqd7odc0",
+                                            "created": 1583541787532,
+                                            "text": "Problem"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "c146pyh9dls0",
+                                                    "created": 1583541805191,
+                                                    "text": "request already held lock will block"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c146qasxl9s0",
+                                            "created": 1583541832018,
+                                            "text": "What"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "c146qcbp46o0",
+                                                    "created": 1583541835330,
+                                                    "text": "success when request already held by other thread"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c146skw8ivs0",
+                                            "created": 1583542010714,
+                                            "text": "Implementation"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "c146sn7sr940",
+                                                    "created": 1583542015767,
+                                                    "text": "each lock an acquisition count"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "c146sty35ag0",
+                                                    "created": 1583542030417,
+                                                    "text": "an owning thread"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "c14736dgjr40",
+                    "created": 1583542841110,
+                    "text": "2.4 Guarding State with locks"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "c1473idke7k0",
+                            "created": 1583542867238,
+                            "text": "Prelude"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c1473mnx9t40",
+                                    "created": 1583542876571,
+                                    "text": "Locks enable serialized access to the code paths they guard"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c1474hhcdqo0",
+                                    "created": 1583542943653,
+                                    "text": "Use them to construct protocols for guaranteeing exclusive access to shared state"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c1474wm5g740",
+                                    "created": 1583542976596,
+                                    "text": "Following these protocols consistently can ensure state consistenscy"
+                                },
+                                "children": []
                             }
                         ]
                     }
