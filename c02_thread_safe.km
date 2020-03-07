@@ -78,7 +78,8 @@
                         "data": {
                             "id": "c1464xsz6mo0",
                             "created": 1583540158076,
-                            "text": "2.3.1 Intrinsic Locks"
+                            "text": "2.3.1 Intrinsic Locks",
+                            "expandState": "expand"
                         },
                         "children": [
                             {
@@ -120,6 +121,117 @@
                                                 "children": []
                                             }
                                         ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c146ce4cqw80",
+                                            "created": 1583540742141,
+                                            "text": "lock on which",
+                                            "expandState": "expand"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "c146cq3kxoo0",
+                                                    "created": 1583540768216,
+                                                    "text": "synchronized object",
+                                                    "expandState": "expand"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "c1468u9v3o00",
+                                                    "created": 1583540463846,
+                                                    "text": "synchronized method"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "c146bn762u00",
+                                                    "created": 1583540683538,
+                                                    "text": "synchronized static method"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "c14681aeu3k0",
+                                    "created": 1583540400753,
+                                    "text": "How",
+                                    "expandState": "expand"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c1468h78ru00",
+                                            "created": 1583540435389,
+                                            "text": "Java object header intrinsic locks or monitor locks"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c1468zeq3aw0",
+                                            "created": 1583540475024,
+                                            "text": "Lock aquire and release"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c146f8evzzk0",
+                                            "created": 1583540964810,
+                                            "text": "Act as mutexes"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "c146gc06u6o0",
+                                                    "created": 1583541050992,
+                                                    "text": "block guarded by same lock execute atomically"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c146hxmt4ig0",
+                                            "created": 1583541176437,
+                                            "text": "Atomicity"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "c146i87m2fs0",
+                                                    "created": 1583541199462,
+                                                    "text": "same thing  as it does in transactional applicaitons"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "c146ihccqq80",
+                                                    "created": 1583541219340,
+                                                    "text": "group of statements appear to execute as a single, indivisible unit"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c146j28nx8g0",
+                                            "created": 1583541264829,
+                                            "text": "Cannot observe another thread in the middle of syncrhonized block"
+                                        },
+                                        "children": []
                                     }
                                 ]
                             }
