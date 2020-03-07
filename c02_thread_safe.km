@@ -5,7 +5,129 @@
             "created": 1583539813954,
             "text": "Thread_Safety"
         },
-        "children": []
+        "children": [
+            {
+                "data": {
+                    "id": "c1461tqtah40",
+                    "created": 1583539914145,
+                    "text": "2.3Locking"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "c146399laxs0",
+                            "created": 1583540026296,
+                            "text": "Prelude",
+                            "expandState": "expand"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c1462uctcps0",
+                                    "created": 1583539993840,
+                                    "text": "Problem"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c1462wnn1740",
+                                            "created": 1583539998848,
+                                            "text": "one state to more state"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "c1463fbvrps0",
+                                    "created": 1583540039496,
+                                    "text": "Why"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c1463hf5pzc0",
+                                            "created": 1583540044047,
+                                            "text": "can not update both thread-safe object thread-safetyly..."
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "c1464o87jrc0",
+                                    "created": 1583540137229,
+                                    "text": "Solution"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c1464p8uz2w0",
+                                            "created": 1583540139445,
+                                            "text": "update related state variables in a single atomic operation"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c1464xsz6mo0",
+                            "created": 1583540158076,
+                            "text": "2.3.1 Intrinsic Locks"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c1466hruznk0",
+                                    "created": 1583540279908,
+                                    "text": "What"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c1466nvqrvk0",
+                                            "created": 1583540293204,
+                                            "text": "synchronized block"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c1466r1y7nk0",
+                                            "created": 1583540300109,
+                                            "text": "composition"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "c14677jiakg0",
+                                                    "created": 1583540335999,
+                                                    "text": "a reference to an object"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "c1467b8hv4o0",
+                                                    "created": 1583540344040,
+                                                    "text": "a block of code to be guarded by that lock"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
     },
     "template": "default",
     "theme": "fresh-blue",
