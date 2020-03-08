@@ -329,14 +329,16 @@
                 "data": {
                     "id": "c14736dgjr40",
                     "created": 1583542841110,
-                    "text": "2.4 Guarding State with locks"
+                    "text": "2.4 Guarding State with locks",
+                    "expandState": "expand"
                 },
                 "children": [
                     {
                         "data": {
-                            "id": "c1473idke7k0",
-                            "created": 1583542867238,
-                            "text": "Prelude"
+                            "id": "c1478b6uzjs0",
+                            "created": 1583543243416,
+                            "text": "Protocols",
+                            "expandState": "expand"
                         },
                         "children": [
                             {
@@ -360,6 +362,107 @@
                                     "id": "c1474wm5g740",
                                     "created": 1583542976596,
                                     "text": "Following these protocols consistently can ensure state consistenscy"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c1478gpvbyo0",
+                            "created": 1583543255449,
+                            "text": "Compound actions"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c1478rbypbk0",
+                                    "created": 1583543278553,
+                                    "text": "RMW"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c1478uq98vk0",
+                                    "created": 1583543285947,
+                                    "text": "LI"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c1479k36eco0",
+                            "created": 1583543341148,
+                            "text": "Common mistake"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c1479q40pag0",
+                                    "created": 1583543354260,
+                                    "text": "only needs when writing to shared variables"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c152wmhhiig0",
+                            "created": 1583632603150,
+                            "text": "Example"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c152wnznl9s0",
+                                    "created": 1583632606425,
+                                    "text": "Snapshot on single thread program"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c1531ei89ow0",
+                            "created": 1583632977601,
+                            "text": "Rules"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c1531fii3ew0",
+                                    "created": 1583632979795,
+                                    "text": "Every access to a lock guarded variable"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c1531p9xl480",
+                                    "created": 1583633001044,
+                                    "text": "Access class with more state variables"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c15320vfasg0",
+                                            "created": 1583633026288,
+                                            "text": "each varaible participating in the invariant must be guarded by the same lock"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "c1536au11ww0",
+                                    "created": 1583633361428,
+                                    "text": "Compound actions"
                                 },
                                 "children": []
                             }
