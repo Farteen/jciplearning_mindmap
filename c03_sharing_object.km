@@ -18,7 +18,8 @@
                 "data": {
                     "id": "c15wcppg1w80",
                     "created": 1583715676175,
-                    "text": "3.1 Visibility"
+                    "text": "3.1 Visibility",
+                    "expandState": "expand"
                 },
                 "children": [
                     {
@@ -121,9 +122,70 @@
                         "data": {
                             "id": "c15wgdsdj6w0",
                             "created": 1583715963688,
-                            "text": "3.1.1 Stale Data"
+                            "text": "3.1.1 Stale Data",
+                            "expandState": "expand"
                         },
-                        "children": []
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c15wwvvrzg00",
+                                    "created": 1583717256902,
+                                    "text": "Insufficiently synchronized program",
+                                    "expandState": "expand"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c15wrh4fg4o0",
+                                    "created": 1583716832953,
+                                    "text": "MutableInteger"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c15wrk76bfc0",
+                                            "created": 1583716839649,
+                                            "text": "synchronized on method"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c15wrp4cicg0",
+                            "created": 1583716850362,
+                            "text": "3.1.2 Nonatomic 64-bit Operations"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c15wsz099vc0",
+                                    "created": 1583716950247,
+                                    "text": "Out-of-thin-air safety"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c15wtcnkjpc0",
+                                    "created": 1583716979955,
+                                    "text": "64-bit variables not declared volatile"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c15wtp9yfgw0",
+                                    "created": 1583717007429,
+                                    "text": "JVM requires fetch and store operations be atomics, but for nonvolatile long and double variables"
+                                },
+                                "children": []
+                            }
+                        ]
                     }
                 ]
             }
