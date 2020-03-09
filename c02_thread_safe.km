@@ -469,6 +469,115 @@
                         ]
                     }
                 ]
+            },
+            {
+                "data": {
+                    "id": "c1538ij4lrk0",
+                    "created": 1583633534912,
+                    "text": "2.5 Liveness And Performance"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "c1538u1wj6o0",
+                            "created": 1583633559992,
+                            "text": "Present Situation"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c1539lch8aw0",
+                                    "created": 1583633619404,
+                                    "text": "Introducing caching into servlet improve performance"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c153a2iww6o0",
+                                    "created": 1583633656799,
+                                    "text": "Caching required some shared state"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c153ab13wy00",
+                                    "created": 1583633675313,
+                                    "text": "Required synchronization to maintain the integrity of that state."
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c153bw3xhlc0",
+                            "created": 1583633799560,
+                            "text": "Problem"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c153bxjs78o0",
+                                    "created": 1583633802696,
+                                    "text": "Safety but high price"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c153ccl5k9s0",
+                                    "created": 1583633835430,
+                                    "text": "Only one thread may execute it at once"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c153djhksn40",
+                            "created": 1583633928816,
+                            "text": "Solution"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c153dkns2pk0",
+                                    "created": 1583633931367,
+                                    "text": "Narrowing the scope of the synchronized block"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c153e1saua00",
+                                    "created": 1583633968646,
+                                    "text": "Exclude from synchronized blocks long-running oeprations that do not affect shared state"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c153hezpsaw0",
+                            "created": 1583634232485,
+                            "text": "Performance"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c153hi1t6nc0",
+                                    "created": 1583634239142,
+                                    "text": "Safe to use AtomicLong but less benefit than there. "
+                                },
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
             }
         ]
     },
