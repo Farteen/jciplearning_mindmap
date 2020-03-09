@@ -1,0 +1,787 @@
+{
+    "root": {
+        "data": {
+            "id": "c15vm0u6de00",
+            "created": 1583713584574,
+            "text": "3. Sharing Object",
+            "expandState": "expand"
+        },
+        "children": [
+            {
+                "data": {
+                    "id": "c15vmd8ewvs0",
+                    "created": 1583713611556,
+                    "text": "Prelude"
+                },
+                "children": []
+            },
+            {
+                "data": {
+                    "id": "c15wcppg1w80",
+                    "created": 1583715676175,
+                    "text": "3.1 Visibility",
+                    "expandState": "expand"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "c15wgb1a6740",
+                            "created": 1583715957696,
+                            "text": "Prelude",
+                            "expandState": "expand"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c15wduete480",
+                                    "created": 1583715764781,
+                                    "text": "Problem",
+                                    "expandState": "expand"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c15wcrhp8fk0",
+                                            "created": 1583715680061,
+                                            "text": "Multithread read and write"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c15wdxy6xpc0",
+                                            "created": 1583715772483,
+                                            "text": "Reordering"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "c15we59we2g0",
+                                                    "created": 1583715788428,
+                                                    "text": "JVM"
+                                                },
+                                                "children": [
+                                                    {
+                                                        "data": {
+                                                            "id": "c15wed436eo0",
+                                                            "created": 1583715805491,
+                                                            "text": "JMM"
+                                                        },
+                                                        "children": []
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "c15we6h5g2w0",
+                                                    "created": 1583715791043,
+                                                    "text": "CPU",
+                                                    "expandState": "expand"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c15wgmyhhfk0",
+                                            "created": 1583715983648,
+                                            "text": "Insufficiently synchronization"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c15wft274bk0",
+                                            "created": 1583715918569,
+                                            "text": "Prohibitiely dificult"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "c15wfqo2eqw0",
+                                    "created": 1583715913361,
+                                    "text": "Solution"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c15wfxaz61s0",
+                                            "created": 1583715927807,
+                                            "text": "ALways use the proper synchronization whenever data is shared across threads"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c15wgdsdj6w0",
+                            "created": 1583715963688,
+                            "text": "3.1.1 Stale Data",
+                            "expandState": "expand"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c15wwvvrzg00",
+                                    "created": 1583717256902,
+                                    "text": "Insufficiently synchronized program",
+                                    "expandState": "expand"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c15wrh4fg4o0",
+                                    "created": 1583716832953,
+                                    "text": "MutableInteger"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c15wrk76bfc0",
+                                            "created": 1583716839649,
+                                            "text": "synchronized on method"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c15wrp4cicg0",
+                            "created": 1583716850362,
+                            "text": "3.1.2 Nonatomic 64-bit Operations"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c15wsz099vc0",
+                                    "created": 1583716950247,
+                                    "text": "Out-of-thin-air safety"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c15wtcnkjpc0",
+                                    "created": 1583716979955,
+                                    "text": "64-bit variables not declared volatile"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c15wtp9yfgw0",
+                                    "created": 1583717007429,
+                                    "text": "JVM requires fetch and store operations be atomics, but for nonvolatile long and double variables"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c15wxp4w4080",
+                            "created": 1583717320580,
+                            "text": "3.1.3 Locking and Visibility"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c15x5nlyg6w0",
+                                    "created": 1583717944172,
+                                    "text": "Synchronization Guarantee"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c15x5qdz0rs0",
+                                            "created": 1583717950219,
+                                            "text": "One thread sees the effects of anohter in a predictable manner"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c15x82zuxnc0",
+                            "created": 1583718134392,
+                            "text": "3.1.4 Volatile Variables"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c15x8bctyvc0",
+                                    "created": 1583718152591,
+                                    "text": "weaker form of synchronization, volatile variables"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c15x8ku57vk0",
+                                            "created": 1583718173229,
+                                            "text": "ensure that updates to a variable are propagated predictablely to other threads"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "c15x91y5ixk0",
+                                    "created": 1583718210476,
+                                    "text": "compiler and runtime are put on notice"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c15x9aujc9k0",
+                                            "created": 1583718229849,
+                                            "text": "shared"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c15x9cfgtrs0",
+                                            "created": 1583718233291,
+                                            "text": "should not bereordered with other memory operations"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "c1628soaoo80",
+                                    "created": 1583732295839,
+                                    "text": "Limitations"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c162927hi1s0",
+                                            "created": 1583732316590,
+                                            "text": "Most common use for volatile variables is as a completion, interruption or status flag"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "c1629u9giu80",
+                                    "created": 1583732377659,
+                                    "text": "Guarantee"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c1629wc8jj40",
+                                            "created": 1583732382181,
+                                            "text": "Lock"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "c162a4oowg00",
+                                                    "created": 1583732400348,
+                                                    "text": "Visibility"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "c162a5z85og0",
+                                                    "created": 1583732403162,
+                                                    "text": "Atomicity"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c162a0ivlyg0",
+                                            "created": 1583732391290,
+                                            "text": "volatile"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "c162a2nn8xk0",
+                                                    "created": 1583732395932,
+                                                    "text": "visibility"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "c162bzrpu8o0",
+                    "created": 1583732546376,
+                    "text": "3.2 Publication and escape"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "c162c4sormo0",
+                            "created": 1583732557318,
+                            "text": "Prelude"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c162c6i1w340",
+                                    "created": 1583732561029,
+                                    "text": "Publishing one object may indirectly publish others."
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c162hr9jc800",
+                                    "created": 1583732998047,
+                                    "text": "Once an object escapes, have to assume that another class or thread may, mailiciously or carelessly, misuse it"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c162k6prn200",
+                                    "created": 1583733188409,
+                                    "text": "inner class"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c162kbdetr40",
+                            "created": 1583733198545,
+                            "text": "3.2.1 Safe Construction Practices"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c162n7y0jig0",
+                                    "created": 1583733426177,
+                                    "text": "this references esacepes during construction"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c162u4cjbe80",
+                                    "created": 1583733966897,
+                                    "text": "Thread in constructor"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c162u87v3c00",
+                                            "created": 1583733975321,
+                                            "text": "not to start the thread immediately"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c162udm52q80",
+                                            "created": 1583733987068,
+                                            "text": "expose start or initialize method that starts the owned thread"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "c162vm5okfs0",
+                                    "created": 1583734084028,
+                                    "text": "Event listener"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c162vog3mwo0",
+                                            "created": 1583734089012,
+                                            "text": "Factory method"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "c163orvg4ig0",
+                    "created": 1583736369031,
+                    "text": "3.3 Thread confinement",
+                    "expandState": "expand"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "c163r0j673k0",
+                            "created": 1583736544608,
+                            "text": "Prelude",
+                            "expandState": "expand"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c163q7pe5ag0",
+                                    "created": 1583736481858,
+                                    "text": "Not share",
+                                    "expandState": "expand"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c163qkzso740",
+                                            "created": 1583736510785,
+                                            "text": "Access from single thread, no synchronization is needed."
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "c163pwyz15c0",
+                                    "created": 1583736458492,
+                                    "text": "One thread per connection"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c163qw4odpc0",
+                                            "created": 1583736535025,
+                                            "text": "pooled connection"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "c163pzd2oug0",
+                                    "created": 1583736463699,
+                                    "text": "ThreadLocal"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c163r39h32w0",
+                            "created": 1583736550552,
+                            "text": "3.3.1 Ad-hoc Thread confinement"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c163wy9x62g0",
+                                    "created": 1583737009880,
+                                    "text": "Subsystem",
+                                    "expandState": "expand"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c163w0mybxk0",
+                                            "created": 1583736936658,
+                                            "text": "Consequence of the decision to implement a particular subsystem"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c163wclbqfc0",
+                                            "created": 1583736962681,
+                                            "text": "Single threaded subsystems offer a simplicity benefit"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c163wphox340",
+                                            "created": 1583736990759,
+                                            "text": "Deadlock avoidance"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "c163x27bym80",
+                                    "created": 1583737018431,
+                                    "text": "Volatile variables"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c163xaqu2mw0",
+                                            "created": 1583737037024,
+                                            "text": "Safe to perform read-modify-write operations on shared volatile varialbes as long as single thread write"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c163xu02c0o0",
+                                            "created": 1583737078941,
+                                            "text": "Prevent race condition"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c163ylbfq6g0",
+                            "created": 1583737138402,
+                            "text": "3.3.2 Stack confinement"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c163z7ech280",
+                                    "created": 1583737186467,
+                                    "text": "Special cas of thread confinement in which an object can only be reached through local variables."
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c163zj5dgd40",
+                                    "created": 1583737212046,
+                                    "text": "exist on the executing thread's stack, which is not accessible to other threads."
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c1641iyir2w0",
+                            "created": 1583737368360,
+                            "text": "3.3.3 ThreadLocal"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c1641lqp0u00",
+                                    "created": 1583737374417,
+                                    "text": "More formal means of maintining thread confinement is ThreadLocal"
+                                },
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "c1643yx1rs00",
+                    "created": 1583737559828,
+                    "text": "3.4 Immutability",
+                    "expandState": "expand"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "c164gp72w5s0",
+                            "created": 1583738557401,
+                            "text": "Prelude",
+                            "expandState": "expand"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c16462mpec80",
+                                    "created": 1583737724638,
+                                    "text": "Characters",
+                                    "expandState": "expand"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c1644ozbmdk0",
+                                            "created": 1583737616562,
+                                            "text": "State cannot be change after construction"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c1644tr11ug0",
+                                            "created": 1583737626944,
+                                            "text": "Inherently thread safe"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c1644y11pio0",
+                                            "created": 1583737636257,
+                                            "text": "Invariants are established by the constructor"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "c1646831xmw0",
+                                    "created": 1583737736510,
+                                    "text": "Vs Final"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c16474ccusw0",
+                            "created": 1583737806730,
+                            "text": "3.4.1 Final Fields"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c1647cmuq6o0",
+                                    "created": 1583737824779,
+                                    "text": "limit version of the const mechanism from C++"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c1647h841ag0",
+                                    "created": 1583737834771,
+                                    "text": "Make possible the guarantee of initilization safety"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c164h18htds0",
+                            "created": 1583738583608,
+                            "text": "3.4.2 Example Using volatile to Publish Immutable Objects"
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "c164web0kz40",
+                    "created": 1583739787521,
+                    "text": "3.5 Safe Publication"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "c164wkwhc0o0",
+                            "created": 1583739801879,
+                            "text": "Prelude"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c164wn1dyww0",
+                            "created": 1583739806530,
+                            "text": "3.5.1 Improper Publication: When Good Objects Go Bad"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c164x7m45kw0",
+                                    "created": 1583739851320,
+                                    "text": "Cannot rely on the integrity of partially constructed objects."
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c164xh0ty2o0",
+                                    "created": 1583739871799,
+                                    "text": "An observing thread could see the object in an inconsistent state, and then later see its state suddenly change"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c164zh1mxl40",
+                                    "created": 1583740028576,
+                                    "text": "final to declare n"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c164zwsa8qg0",
+                                    "created": 1583740062839,
+                                    "text": "Thow things go wrong with improperly published objects"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c165099jw9s0",
+                                            "created": 1583740090005,
+                                            "text": "Stale value for holder field"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c1650kpf0ag0",
+                                            "created": 1583740114909,
+                                            "text": "Stale value for state of the Holder"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    "template": "default",
+    "theme": "fresh-blue",
+    "version": "1.4.43"
+}
