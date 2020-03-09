@@ -1,0 +1,135 @@
+{
+    "root": {
+        "data": {
+            "id": "c15vm0u6de00",
+            "created": 1583713584574,
+            "text": "3. Sharing Object"
+        },
+        "children": [
+            {
+                "data": {
+                    "id": "c15vmd8ewvs0",
+                    "created": 1583713611556,
+                    "text": "Prelude"
+                },
+                "children": []
+            },
+            {
+                "data": {
+                    "id": "c15wcppg1w80",
+                    "created": 1583715676175,
+                    "text": "3.1 Visibility"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "c15wgb1a6740",
+                            "created": 1583715957696,
+                            "text": "Prelude",
+                            "expandState": "expand"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c15wduete480",
+                                    "created": 1583715764781,
+                                    "text": "Problem",
+                                    "expandState": "expand"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c15wcrhp8fk0",
+                                            "created": 1583715680061,
+                                            "text": "Multithread read and write"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c15wdxy6xpc0",
+                                            "created": 1583715772483,
+                                            "text": "Reordering"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "c15we59we2g0",
+                                                    "created": 1583715788428,
+                                                    "text": "JVM"
+                                                },
+                                                "children": [
+                                                    {
+                                                        "data": {
+                                                            "id": "c15wed436eo0",
+                                                            "created": 1583715805491,
+                                                            "text": "JMM"
+                                                        },
+                                                        "children": []
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "c15we6h5g2w0",
+                                                    "created": 1583715791043,
+                                                    "text": "CPU",
+                                                    "expandState": "expand"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c15wgmyhhfk0",
+                                            "created": 1583715983648,
+                                            "text": "Insufficiently synchronization"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c15wft274bk0",
+                                            "created": 1583715918569,
+                                            "text": "Prohibitiely dificult"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "c15wfqo2eqw0",
+                                    "created": 1583715913361,
+                                    "text": "Solution"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c15wfxaz61s0",
+                                            "created": 1583715927807,
+                                            "text": "ALways use the proper synchronization whenever data is shared across threads"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c15wgdsdj6w0",
+                            "created": 1583715963688,
+                            "text": "3.1.1 Stale Data"
+                        },
+                        "children": []
+                    }
+                ]
+            }
+        ]
+    },
+    "template": "default",
+    "theme": "fresh-blue",
+    "version": "1.4.43"
+}
