@@ -776,6 +776,366 @@
                                 ]
                             }
                         ]
+                    },
+                    {
+                        "data": {
+                            "id": "c16c2vj2kio0",
+                            "created": 1583760042967,
+                            "text": "3.5.2 Immutable Objects and Initialization Safety"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c16c38yywow0",
+                                    "created": 1583760072227,
+                                    "text": "JMM offers a special guarantee of initialization safety for sharing immutable objects."
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c16chxs2uuo0",
+                                            "created": 1583761223328,
+                                            "text": "synchonization is needed"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "c16ci7wzgmo0",
+                                    "created": 1583761245393,
+                                    "text": "Immutable objects on the other hand can be safely accesssed even when synchronized is not used to publish the object reference."
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c16cjqje8880",
+                                    "created": 1583761364294,
+                                    "text": "requirements for immutability"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c16cjuff09c0",
+                                            "created": 1583761372760,
+                                            "text": "unmodifiable state"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c16cjx8wzk80",
+                                            "created": 1583761378898,
+                                            "text": "all fields are final"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c16ck06v2mw0",
+                                            "created": 1583761385304,
+                                            "text": "proper construction"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "c16cmfv3pns0",
+                                    "created": 1583761576150,
+                                    "text": "properly constructed objects final fields"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c16cmknq8jc0",
+                                            "created": 1583761586588,
+                                            "text": "safely accessed without additional synchronization"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c16cn39jcvc0",
+                                            "created": 1583761627088,
+                                            "text": "if final fields refer to mutable objecs, synchronization is required to access the state of the object they refer to."
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c16cnzlb0bs0",
+                            "created": 1583761697457,
+                            "text": "3.5.4 Safe Publication Idioms"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c16d3ceg1n40",
+                                    "created": 1583762900803,
+                                    "text": "Properly constructed object can be safely published",
+                                    "expandState": "expand"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c16co52127k0",
+                                            "created": 1583761709352,
+                                            "text": "Initializing an object reference from a static initializer"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c16d1qhs3i80",
+                                            "created": 1583762774751,
+                                            "text": "Storing a reference to it into a volatile field or AtomicReference"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c16d23qyavk0",
+                                            "created": 1583762803604,
+                                            "text": "Storing a reference to it into a final field of a properly constructed object;"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c16d2fczphc0",
+                                            "created": 1583762828881,
+                                            "text": "Storing a reference to it into a field that is properly guarded by a lock"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "c16d3l6rkgg0",
+                                    "created": 1583762919930,
+                                    "text": "Thread safe library collections offers the following safe publication guarantees"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c16d3xrf4000",
+                                            "created": 1583762947300,
+                                            "text": "Hashtable, synchronizedMap, ConcurrentMap"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c16d43rh4540",
+                                            "created": 1583762960364,
+                                            "text": "Vector, CopyOnWriteArrayList, CopyOnWriteArraySet, synchronizedList, synchronizedSet"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c16d4gnppb40",
+                                            "created": 1583762988435,
+                                            "text": "BlockingQueue, ConcurrentLinkedQUeue"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c16dfcg5vvc0",
+                            "created": 1583763841277,
+                            "text": "3.5.5 Mutable Objects"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c16dfg8z05c0",
+                                    "created": 1583763849549,
+                                    "text": "Synchronization must be used"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c16dfxawie00",
+                                            "created": 1583763886671,
+                                            "text": "push a mutable object"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c16dfzwo9ds0",
+                                            "created": 1583763892341,
+                                            "text": "every time the object is accessed to ensure visibility of subsequent modifications"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "c16dgk01jg00",
+                                    "created": 1583763936081,
+                                    "text": "Share mutable objects safely"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c16dgob9ec00",
+                                            "created": 1583763945466,
+                                            "text": "thread-safe"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c16dgqsw4880",
+                                            "created": 1583763950886,
+                                            "text": "guarded by a lock"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "c16dgx5bzf40",
+                                    "created": 1583763964698,
+                                    "text": "Publication requirements for an object depend on its mutability"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c16dh3kpnk80",
+                                            "created": 1583763978689,
+                                            "text": "Immutable objects can be published through any mechanism;"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c16dhegzf4w0",
+                                            "created": 1583764002408,
+                                            "text": "Effectively immutable objects must be safely published"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c16dhkczx9c0",
+                                            "created": 1583764015228,
+                                            "text": "Mutable objects must be safely publushed, and must be either threadsafe or guarded by a lock."
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c16dhzg6wag0",
+                            "created": 1583764048073,
+                            "text": "3.5.6 Sharing Objects Safely",
+                            "expandState": "expand"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c16di8roseg0",
+                                    "created": 1583764068359,
+                                    "text": "Whenever you acquire a reference to an object, you should know"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c16dihnv00w0",
+                                            "created": 1583764087719,
+                                            "text": "What you are allowed to do with it"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c16dily4qu80",
+                                            "created": 1583764097047,
+                                            "text": "Do you need to acquire a lock before using it"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c16disd3w800",
+                                            "created": 1583764111013,
+                                            "text": "Are you allowed to modify its state, or only to read it?"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "c16djlxodg00",
+                                    "created": 1583764175383,
+                                    "text": "When publish an object, document it"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c16djua74p40",
+                                    "created": 1583764193555,
+                                    "text": "Policy for using sharing objects in a concurrent program"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c16dk5rb6zc0",
+                                            "created": 1583764218534,
+                                            "text": "Thread confined"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c16dk7rkkdk0",
+                                            "created": 1583764222903,
+                                            "text": "Shared read-only"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c16dkaerkkw0",
+                                            "created": 1583764228660,
+                                            "text": "Shared thread-safe"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c16dkiyonnk0",
+                                            "created": 1583764247278,
+                                            "text": "Guraded"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
                     }
                 ]
             }
