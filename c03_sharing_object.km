@@ -3,7 +3,8 @@
         "data": {
             "id": "c15vm0u6de00",
             "created": 1583713584574,
-            "text": "3. Sharing Object"
+            "text": "3. Sharing Object",
+            "expandState": "expand"
         },
         "children": [
             {
@@ -603,6 +604,176 @@
                                     "text": "More formal means of maintining thread confinement is ThreadLocal"
                                 },
                                 "children": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "c1643yx1rs00",
+                    "created": 1583737559828,
+                    "text": "3.4 Immutability",
+                    "expandState": "expand"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "c164gp72w5s0",
+                            "created": 1583738557401,
+                            "text": "Prelude",
+                            "expandState": "expand"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c16462mpec80",
+                                    "created": 1583737724638,
+                                    "text": "Characters",
+                                    "expandState": "expand"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c1644ozbmdk0",
+                                            "created": 1583737616562,
+                                            "text": "State cannot be change after construction"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c1644tr11ug0",
+                                            "created": 1583737626944,
+                                            "text": "Inherently thread safe"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c1644y11pio0",
+                                            "created": 1583737636257,
+                                            "text": "Invariants are established by the constructor"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "c1646831xmw0",
+                                    "created": 1583737736510,
+                                    "text": "Vs Final"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c16474ccusw0",
+                            "created": 1583737806730,
+                            "text": "3.4.1 Final Fields"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c1647cmuq6o0",
+                                    "created": 1583737824779,
+                                    "text": "limit version of the const mechanism from C++"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c1647h841ag0",
+                                    "created": 1583737834771,
+                                    "text": "Make possible the guarantee of initilization safety"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c164h18htds0",
+                            "created": 1583738583608,
+                            "text": "3.4.2 Example Using volatile to Publish Immutable Objects"
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "c164web0kz40",
+                    "created": 1583739787521,
+                    "text": "3.5 Safe Publication"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "c164wkwhc0o0",
+                            "created": 1583739801879,
+                            "text": "Prelude"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c164wn1dyww0",
+                            "created": 1583739806530,
+                            "text": "3.5.1 Improper Publication: When Good Objects Go Bad"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c164x7m45kw0",
+                                    "created": 1583739851320,
+                                    "text": "Cannot rely on the integrity of partially constructed objects."
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c164xh0ty2o0",
+                                    "created": 1583739871799,
+                                    "text": "An observing thread could see the object in an inconsistent state, and then later see its state suddenly change"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c164zh1mxl40",
+                                    "created": 1583740028576,
+                                    "text": "final to declare n"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c164zwsa8qg0",
+                                    "created": 1583740062839,
+                                    "text": "Thow things go wrong with improperly published objects"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c165099jw9s0",
+                                            "created": 1583740090005,
+                                            "text": "Stale value for holder field"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c1650kpf0ag0",
+                                            "created": 1583740114909,
+                                            "text": "Stale value for state of the Holder"
+                                        },
+                                        "children": []
+                                    }
+                                ]
                             }
                         ]
                     }
